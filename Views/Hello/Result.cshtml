@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>results</title>
+    </head>
+    <body>
+        <h2>Dojo Results</h2>
+        @{
+            var localName = ViewBag.Name;
+            var localLocation = ViewBag.Location;
+            var localLanguage = ViewBag.Language;
+            var localComment = ViewBag.Comment;
+        }
+        <p>Username: @localName</p>
+        <p>Location: @localLocation</p>
+        <p>Language: @localLanguage</p>
+        <p>Comment: @localComment</p>
+    </body><br>
+    <a class="button" href="/">Go Back</a>
+</html>
